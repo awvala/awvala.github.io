@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Learn about Andrew Vala">
+    <meta name="author" content="Andrew Vala">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!-- div class provides wrapper for sticky footer styling-->
+    <div class="content">
+        <Header>
+            <section id="headerRow">
+            <!--this is a logo-->
+                <section class="logo">
+                Andrew Vala
+                </section>   
+                            
+                <nav class="topnav" id="myTopnav">
+                    <a href="index.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </nav>
+            </section>
+        </header>
+
+    <!-- fullContent is a wrapper for all content beneath the header and navigation elements-->
+    <section id="fullContent">
+        <section>  
+            <article>
+                <h1>Contact</h1>
+                <hr>
+                <label for="name">Name</label><br>
+                <input name="name" placeholder="John Smith" type="text">
+                <br>
+                <label for="email">Email</label><br>
+                <input name="email" placeholder="example@gmail.com" type="text">
+                <br>
+                <label for="message">Message</label>
+                <br>
+                <textarea name="message" rows="10" cols="60"></textarea>
+                <br>
+                <input type="submit">
+            </article>  
+        </section>     
+    </section>
+</div>
+
+<!-- sticky footer with inner element-->
+<footer>
+    <section id="footerRow">
+            Copyright &copy;
+    </section>    
+</footer>
+
+</body>
+</html>
