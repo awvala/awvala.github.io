@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Norse Hangman</title>
+    <link rel="shortcut icon" href="assets/images/norsehelmet_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <div class="horizontalcontainer bg-dark">
+        <div class="navcontainer">
+            <div class="page-header">
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                    <a class="navbar-brand" href="index.html">God of the Hanged(man)</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+        <!-- Navigation links-->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">             
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">play!<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>            
+                </nav>
+            </div>
+        </div> 
+    </div>
+    <!-- End Navigation-->
+
+    <div id="newgame">
+        <p id="landingpage" > Press any key to get started!</p>
+    </div>
+
+    <div id="gamecontainer">
+        <div class="row">
+            <div class="col-sm-5">
+                <img class="img-fluid" src="assets/images/Yggdrassil.jpg" alt="image of Yggdrassil, the world tree">
+            </div>
+                <div class="col-sm-7">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p id="quote"> "...for knowledge of runes and for power, he sacrificed himself to himself.  He hung from the world tree, Yggdrasil- hung there for <font color="red">nine</font> nights.</p>
+                            <p id="author"> -Neil Gaimon, Norse Mythology</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="answerbox">
+                            </div>
+                            <p id="instructions">Type a letter to guess the Norse word</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 nocollapse centertext">
+                            <h3>LETTERS GUESSED</h3>
+                            <p id="guessedLetters"></P>
+                        </div>
+                        <div class="col-sm-6 nocollapse centertext">
+                            <h3>Attempts</h3>
+                            <div id="rotatingContainer">  
+                                <img id="rotateImg" src="assets/images/runecircle.png" alt="rotating circle of runes">
+                                <p id="attempts">0</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">  
+                        <div class="col-sm-6 nocollapse">
+                            <img class="rune centertext" src="assets/images/Wunjo.png" alt="Wunjo, runic symbol for joy" title="Wins"> <p class="results" id="win"> 0 </p>
+                        </div>
+                        <div class="col-sm-6 nocollapse">
+                            <img class="rune centertext" src="assets/images/Kaunan.png" alt="Kaunan, runic symbol for death" title="Losses"><p class="results" id="loss"> 0 </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <audio id="backgroundmusic" controls loop preload="auto">
+            <source src="assets/sounds/Yggdrasill.ogg" type="audio/ogg">
+            <source src="assets/sounds/Yggdrasill.mp3" type="audio/mpeg">
+          Sorry! Your browser does not support audio.
+          </audio>
+          <audio class="hiddenAudio" id="winAudio">
+              <source src="assets/sounds/334915__akrythael__battlecry.wav">
+          </audio>
+          <audio class="hiddenAudio" id="lossAudio">
+            <source src="assets/sounds/deathgrunt.wav">
+        </audio>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>

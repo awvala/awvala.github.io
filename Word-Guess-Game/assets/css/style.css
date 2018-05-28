@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'norseregular';
+    src: url('../fonts/norse-webfont.woff2') format('woff2'),
+         url('../fonts/norse-webfont.woff') format('woff'),
+         url("../fonts/Norse.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+    min-height: 100%; 
+    font-family: norseregular, Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.guessedLetter {
+    -webkit-animation: glow 2s infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    to {
+        text-shadow: 2px 2px 5px #0062FF;
+    }
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.horizontalcontainer {
+    width: 100%;
+}
+
+.navcontainer {
+    max-width: 960px;
+    margin: 0px auto 0px auto;
+}
+
+.navbar{
+    padding: 0px; 
+    max-width: 960px;
+}
+
+.navbar-dark .navbar-brand {
+    margin: 0px auto 0px auto;
+}
+
+.navbar-brand {
+padding: 20px;
+}
+
+.navbar-collapse {
+    padding-right: 20px;
+}
+
+.nav-item a{
+    display: block;
+    text-align: center;
+}
+
+#newgame {
+    text-align: center;
+}
+
+#landingpage {
+    height: 300px;
+    line-height: 300px;
+}
+
+#gamecontainer {
+    display: none;
+    margin: 40px auto 0px auto;
+    max-width: 960px;
+    padding: 0px 20px 0px 20px;
+}
+
+.img-fluid {
+  height: auto;
+}
+
+#quote {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+#author {
+    text-align: right;
+}
+
+.unguessedLetter {
+    display: inline-block;
+    margin: 5px;
+    color: darkgray;
+    line-height: 1;
+}
+
+.guessedLetter {
+    color: lightblue!important;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#answerbox {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin: 10px 0px 10px 0px;
+}
+
+#instructions {
+    font-size: 12px;
+    text-align: center;
+}
+
+.nocollapse {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.centertext {
+    text-align: center;
+}
+
+            /* Begin Attempts formatting */
+
+#rotatingContainer{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+#rotateImg {
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 100s linear infinite;
+    -moz-animation: spin 100s linear infinite;
+    animation: spin 100s linear infinite;
+}
+
+#attempts {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    z-index: 99999;
+}
+
+/* End Attempts formatting */
+
+.rune {
+    float: left;
+    margin-right: 10px;
+}
+
+.results {
+    font-size: 60px;
+}
+
+.hiddenAudio {
+    display: none;
+}
