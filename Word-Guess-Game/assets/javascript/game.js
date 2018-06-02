@@ -132,7 +132,6 @@ function initialize() {
         newGame = false;
     }
     resetGame = false;
-    
 };
 
 // Update gameboard with succesful keystroke
@@ -141,6 +140,7 @@ function makeGuess (keyGuess) {
     var newAttempts = $("#attempts");
     var currentCorrect = word.guessedLettersCorrect;
     var newCorrect = 0;
+    $("#instructions").text("Type a letter to guess the Norse word").css("color", "white");
 
     //Check if the current word contains the keystroke
         for (i = 0; i < word.answerLength; i++) {
@@ -149,7 +149,8 @@ function makeGuess (keyGuess) {
                 $("#answerbox").html(word.placeholderLetters);
                 word.guessedLettersCorrect++;
                 newCorrect++;
-            } else if (word.answerLetters[i] !== keyGuess) {
+                
+            } else if (word.answerLetters[i] !== keyGuess) {    
                 $("#answerbox").html(word.placeholderLetters);
             }
         }
@@ -165,7 +166,8 @@ function makeGuess (keyGuess) {
                 $("#win").html(wins);
                 word.winSound();
                 resetGame = true;
-                alert("You win! You guessed " + word.name + "!");
+                $("#instructions").text("You win! You guessed " + word.name + "!").css("color", "red");
+                //alert("You win! You guessed " + word.name + "!");
                 initialize();
             }
         } else { 
