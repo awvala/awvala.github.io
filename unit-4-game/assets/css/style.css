@@ -1,0 +1,96 @@
+body, html {
+    min-height: 100%; 
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 1;
+    position: relative;
+    color: white;
+    background-image: url("../images/fightbackground.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-color: black;
+}
+
+#wrapper {
+    padding-left: 10px;
+}
+
+h1 {
+    text-align: right; 
+    padding: 10px 200px 10px 0px;
+    font-size: 28px;
+    margin-left: 100px;
+}
+
+h2 {
+    margin: 10px 0px 10px 0px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.selectCharacter {
+    display: inline-block;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid red;
+    text-align: center;
+    color: black;
+    width: 115px;
+}
+
+#yourCharacter {
+    display: none;
+}
+
+.yourChar {
+    display: none;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid red;
+    text-align: center;
+    color: black;
+}
+
+#enemiesAvailable {
+    display: none;
+}
+
+.enemyChar {
+    display: none;
+    background-color: red;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    width: 115px;
+}
+
+#attackSection {
+    display: none;
+    margin-top: 30px;
+}
+
+#defenderContainer {
+    display: none;
+}
+
+#defenderChar {
+    display: none;
+    background-color: black;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid red;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#resetButton {
+    margin-top: 20px;
+    display: none;
+}
+
+audio {
+    margin-top: 20px;
+}

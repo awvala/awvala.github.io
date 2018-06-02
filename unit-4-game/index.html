@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Star Wars RPG</title>
+    <link rel="shortcut icon" href="assets/images/stormtrooper_SeS_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1 id="pageTitle">Star Wars RPG</h1>
+        </header>
+
+        <!--  Select character section-->
+        <section id="selectCharactersection">
+            <h2 id="selectInst">Select Your Champion</h2>
+            <div class="selectCharacter selectRey">
+                <p class="characterName">Jedi: Rey</p>
+                <img class="selectCharImg" src="assets/images/jedirei.jpg" alt="Jedi Rey">
+                <p class="ReyHP">120</p>
+            </div>
+            <div class="selectCharacter selectLuke">
+                <p class="characterName">Jedi: Luke Skywalker</p>
+                <img class="selectCharImg" src="assets/images/lukeskywalker.jpg" alt="Jedi Luke Skywalker">
+                <p class="LukeHP">100</p>
+            </div>
+            <div class="selectCharacter selectAsajj">
+                <p class="characterName">Sith: Asajj-Ventress</p>
+                <img class="selectCharImg" src="assets/images/asajj.jpg" alt="Sith Asajj-Ventress">
+                <p class="AsajjHP">150</p>
+            </div>
+            <div class="selectCharacter selectMaul">
+                <p class="characterName">Sith: Darth Maul</p>
+                <img class="selectCharImg" src="assets/images/darthmaul.jpg" alt="Sith Darth Maul">
+                <p class="MaulHP">180</p>
+            </div>   
+        </section>
+
+        <!--  Player character section-->
+        <section id="yourCharacter">
+            <h2>Your Character</h2>
+            <div class="yourChar">
+                <p id="yourcharacterName"></p>
+                <img id="yourCharImg" src="" alt="">
+                <p id="yourHP"></p>
+            </div>
+        </section>
+
+        <!--  Remaining enemy character section-->
+        <section id="enemiesAvailable">
+            <h2>Enemies Available to Attack</h2>
+            <div class="enemyChar" id="enemyRey">
+                <p class="characterName">Jedi: Rey</p>
+                <img src="assets/images/jedirei.jpg" alt="Jedi Rey">
+                <p id="ReyHP"></p>
+            </div>
+            <div class="enemyChar" id="enemyLuke">
+                <p class="characterName">Jedi: Luke Skywalker</p>
+                <img src="assets/images/lukeskywalker.jpg" alt="Jedi Luke Skywalker">
+                <p id="LukeHP"></p>
+            </div>
+            <div class="enemyChar" id="enemyAsajj">
+                <p class="characterName">Sith: Asajj-Ventress</p>
+                <img src="assets/images/asajj.jpg" alt="Sith Asajj-Ventress">
+                <p id="AsajjHP"></p>
+            </div>
+            <div class="enemyChar" id="enemyMaul">
+                <p class="characterName">Sith: Darth Maul</p>
+                <img src="assets/images/darthmaul.jpg" alt="Sith Darth Maul">
+                <p id="MaulHP"></p>
+            </div>
+        </section>
+
+        <section id="attackSection">
+            <h2>Use the Force!</h2>
+            <button type="button" id="attackButton">Attack</button>
+        </section>
+
+        <!--  Current enemy section-->
+        <section id="defenderContainer">
+            <h2>Defender</h2>
+            <div id="defenderChar">
+                <p id="defenderName"></p>
+                <img id="defenderImg" src="" alt="">
+                <p id="defenderHP"></p>
+            </div>
+            <p id="characterAttackMsg"></p>
+            <p id="enemyAttackMsg"></p>
+            <p id="gameMsg"></p>
+            <button type="button" id="resetButton">Restart</button>  
+        </section>
+
+        <!--  Audio controls section-->
+        <section id="audioSection">
+            <audio id="backgroundmusic" loop preload="auto">
+                <source src="assets/sounds/Star-Wars-Duel-of-the-Fates.mp3" type="audio/mpeg">
+                <source src="" type="audio/og">
+                Sorry! Your browser does not support audio.
+            </audio>
+            <audio class="hiddenAudio" id="gameAudio">
+                    <source src="">
+                </audio>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
