@@ -1,0 +1,51 @@
+<!Doctype <!DOCTYPE html>
+<html lang="en-us"></html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Kyudo Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section id= "gameWrapper">
+        <h1>Kyudo Trivia</h1>
+        <section id="trivaBoard">
+            <p id= "startMessage">Let's test your Kyudo knowledge!</p>
+            <p id= "timerText"></p>
+            <p id= "questionAndResponse"></p>
+            <div class="row">
+                <div class= "column"></div>
+                <div class= "column" id="buttonBox">
+                    <input type="button" class="startButton" value="Hai!">
+                    <input type="radio" class="answers" id= "answer1" name = "quizAnswer" value= "1">
+                    <label class="answers" id="label1" for="answer1"></label>
+                    <br>
+                    <input type="radio" class="answers" id= "answer2" name = "quizAnswer" value= "2">
+                    <label class="answers" id="label2" for="answer2"></label>
+                    <br>
+                    <input type="radio" class="answers" id= "answer3" name = "quizAnswer" value= "3">
+                    <label class="answers" id="label3" for="answer3"></label>
+                    <br>
+                    <input type="radio" class="answers" id= "answer4" name = "quizAnswer" value= "4">
+                    <label class="answers" id="label4" for="answer4"></label>
+                    <br>
+                    <input type="button" id="submitButton" value="Submit Answer">
+                </div>
+                <div class= "column"></div>
+                <div id= "results">
+                    <p id= "correctAnswer"></p>
+                    <br>
+                    <img id ="gifAnswer" src="">
+                </div>
+                </div>
+            </section>
+        <img id="bottomBanner" src="assets/images/kyudobanner.gif">
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</body>
+</html>
