@@ -1,0 +1,55 @@
+body, html {
+    height: 100%;
+}
+
+.bg {
+    background-image: url("../images/cubes.png");
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+#buttonBar{
+    min-height: 50px;
+}
+
+.gifButton {
+    margin: 5px;
+}
+
+.card-body {
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #fef0d5;
+}
+
+#sideBar {
+    color: white;
+    background-color: #00beb2;
+}
+
+.form-control {
+    background-color: white;
+}
+
+.far {
+    color: black;
+}
+
+.fas {
+    color: blueviolet;
+}
+
+#favGifs {
+    color: black;
+    font-size: 12px;
+}
+
+.favorites {
+    margin-bottom: 10px;
+}
