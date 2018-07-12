@@ -1,4 +1,3 @@
 # updatedportfolio
-Updated responsive portfolio page
 
-https://awvala.github.io/updatedportfolio/
+awvala.github.io/updatedportfolio/index.html
