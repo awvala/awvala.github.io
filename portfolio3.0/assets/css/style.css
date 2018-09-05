@@ -1,0 +1,379 @@
+body, html {
+    min-height: 100%; 
+    font-family: 'Raleway', sans-serif;
+    line-height: 1;
+    position: relative;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+h1 {
+    vertical-align: auto;
+}
+
+.main-page {
+    min-height: calc(100vh - 79px);
+}
+
+.bg { 
+    /* The image used */
+    background-image: url("../images/firefly_81933.jpg");
+
+    /* Center and scale the image nicely */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.horizontalcontainer {
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.welcomeContainer {
+    background: rgb(221, 220, 235); /* Fallback for older browsers without RGBA-support */
+    background: rgba(221, 220, 235, .7);
+    max-width: 100%;
+    clear: both;
+    margin: 0px auto 40px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.marginCenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#intro {
+    padding: 20px;
+}
+
+#justifiedPic {
+    display: flex;
+    justify-content: center;
+}
+
+#profilepic {
+    height: 125px;
+    width: 125px;
+}
+
+#welcomeHeader {
+    color: darkslategrey;
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    max-width: 960px;
+    clear: both;
+    max-width: 960px;
+    margin: 0px auto 10px auto;
+
+    padding: 20px;
+}
+
+/***** Navigation styling *****/
+#navpic {
+    margin: 0px 15px 0px 15px;
+    height: 40px;
+    width: 40px;
+}
+
+.nav {
+    width: 100%;
+}
+
+.navbar {
+    padding: 0px; 
+    max-width: 960px;
+}
+
+.navcontainer {
+    background: rgb(64, 64, 64); /* Fallback for older browsers without RGBA-support */
+    background: rgba(64, 64, 64, .9);
+    /*max-width: 960px;*/
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-toggler {
+    border-style: none!important;
+}
+
+#navbarSupportedContent {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-light .navbar-brand {
+    background-color: #4aaaa5;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    margin-right: 0px;
+    font-size: 16px;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: white;
+}
+
+.navbar-nav {
+    margin: 0px;
+    padding: 0px;
+    color: #4aaaa5;
+}
+
+.navbar-light .navbar-nav .nav-link{ 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-item a {
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar-nav a.active {
+    /*background-color: #4aaaa5!important;
+    color: white!important;*/
+}
+
+.navbar-nav a:hover:not(.active) {
+    color: white!important;
+}
+
+.navbar-nav li.active > a {
+	/*background-color: #4aaaa5!important;
+	color:white!important;*/
+}
+
+/***** End Navigation styling *****/
+
+#bodyContainer {
+    width: 100%;
+    padding: 10px;
+}
+
+.fa-folder-open {
+    font-size: 24px;
+}
+
+/***** footer styling *****/
+
+.footer {
+    min-width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: 12px;
+    color: white;
+    background-color: #666666;
+    border-top-color: #4aaaa5;
+    border-top-style: solid;
+    border-top-width: thick; 
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    z-index: 9999;
+}
+
+.footercontainer {
+    text-align: center;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/***** End footer styling ****/
+
+/**** Input Styling *****/
+
+input[type=text]{
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: thin;
+    margin: 10px auto 20px auto;
+}
+
+input[type=email]{
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: thin;
+    margin: 10px auto 20px auto;
+}
+
+textarea{
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: thin;
+    margin: 10px auto 20px auto;
+}
+
+.btn-primary{
+    background-color: #4aaaa5;
+    color: white;
+    border: none;
+    width: 115px;
+    height: 40px;
+    font-size: 16px;
+}
+
+/**** End input stylilng *****/
+
+/***** Minicontainer for the portfolio images and banners *****/
+
+.portfoliocontainer{
+    position: relative;
+    margin: 10px 0px 10px 20px!important;
+}
+
+.card {
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.cardTitle {
+    font-weight: bold;
+}
+
+.cardDate {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.cardDescription {
+    font-size: 16px;
+}
+
+.cardLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolioimagelink{
+    z-index: 100;
+}
+
+.cardbanner{
+    position: absolute;
+    bottom: 10px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    margin-left: -20px;
+    width: 100%;
+    text-decoration-line: none;
+
+    /* IE, Opera, Mozilla supports */
+    text-decoration: none;
+    z-index: 200;
+}
+
+.ghabs {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2000;
+}
+
+.card a:hover {
+    color: white!important;
+    text-decoration-line: none!important;
+    /* IE, Opera, Mozilla supports */
+    text-decoration: none!important;
+}
+
+.devIcons{
+    margin-top: 10px;
+}
+
+.newDevicon{
+    height: auto;
+    width: 18px;
+    padding-bottom: 5px;
+}
+
+/*****  End Portfolio styling *****/
+
+.ghRepo {
+    background-color: red;
+    text-align: center;
+}
+
+.ghImg {
+    width: 20px;
+    height: 20px;
+}
+
+.devIcons{
+    margin-top: 10px;
+}
+
+#aboutMe {
+    margin-top: 20px;
+}
+
+#aboutDescription {
+    margin-top: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+li, p {
+    line-height: 1.5;
+}
+
+.rafWrapper {
+    display: inline-block;
+}
+
+.rafImgContainer {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.rafImg {
+ width: 100%;
+ height: auto;
+}
+
