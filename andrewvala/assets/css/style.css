@@ -1,0 +1,530 @@
+body, html {
+    min-height: 100%; 
+    font-family: 'Raleway', sans-serif;
+    line-height: 1;
+    position: relative;
+}
+
+body {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+h1 {
+    vertical-align: auto;
+}
+
+.main-page {
+    min-height: calc(100vh - 79px);
+}
+
+.bg { 
+    /* The image used */
+    background-image: url("../images/minneapolisbg.jpg");
+
+    /* Center and scale the image nicely */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.horizontalcontainer {
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.welcomeContainer {
+    background: rgb(221, 220, 235); /* Fallback for older browsers without RGBA-support */
+    background: rgba(221, 220, 235, .7);
+    max-width: 100%;
+    clear: both;
+    margin: 0px auto 40px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.marginCenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#intro {
+    margin: 20px;
+  
+    background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.introP {
+    padding: 10px;
+    text-align: left;
+}
+
+#justifiedPic {
+    display: flex;
+    justify-content: center;
+}
+
+#profilepic {
+    height: 125px;
+    width: 125px;
+}
+
+#welcomeHeader {
+    color: darkslategrey;
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    max-width: 960px;
+    clear: both;
+    max-width: 960px;
+    margin: 0px auto 10px auto;
+
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #666666 /*rgb(0, 168, 107);*/;
+    width: 100%;
+    min-height: 65px;
+    padding: 0px;
+}
+
+.hover {
+    cursor: pointer;
+}
+
+ul.navbar-nav {
+    list-style-type: none;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+ul.navbar-nav.a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+
+ul.navbar-nav a {
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+}
+
+ul.navbar-nav a {
+    position: relative;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    color: white;
+}
+ul.navbar-nav a::before {
+    content: '';  
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+ul.navbar-nav a:active::before {
+    background-color: #000;
+}
+ul.navbar-nav a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+    text-decoration: none;
+}
+
+/* First animated toggler */
+.navbar-dark .navbar-toggler{
+    border-color: transparent;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+
+.navbar-toggler span {
+   display: block;
+   background-color: white;
+   height: 3px;
+   width: 25px;
+   margin-top: 4px;
+   margin-bottom: 4px;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   position: relative;
+   right: 0;
+   opacity: 1;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+   -webkit-transition: transform .35s ease-in-out;
+   -moz-transition: transform .35s ease-in-out;
+   -o-transition: transform .35s ease-in-out;
+   transition: transform .35s ease-in-out;
+}
+
+.navbar-toggler span:nth-child(2) {
+   -webkit-transition: all .25s;
+   -moz-transition: all .25s;
+   -o-transition: all .25s;
+   transition: all .25s;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute;
+    left: 10px;
+    top: 27px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px;
+    visibility: hidden;
+    background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute;
+    left: 10px;
+    top: 27px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+    ;
+}
+
+.navcontainer {
+    background: rgb(64, 64, 64);  
+    background: rgba(64, 64, 64, .9);
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbarSupportedContent {
+    max-width: 960px;
+   
+}
+
+/***** End Navigation styling *****/
+
+#bodyContainer {
+    width: 100%;
+    padding: 10px;
+}
+
+.fa-folder-open {
+    font-size: 24px;
+}
+
+/***** footer styling *****/
+
+.footer {
+    min-width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: 12px;
+    color: white;
+    background-color: #666666;
+    border-top-color: #4aaaa5;
+    border-top-style: solid;
+    border-top-width: thick; 
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    z-index: 9999;
+}
+
+.footercontainer {
+    text-align: center;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/***** End footer styling ****/
+
+/**** Input Styling *****/
+
+input[type=text]{
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: thin;
+    margin: 10px auto 20px auto;
+}
+
+input[type=email]{
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: thin;
+    margin: 10px auto 20px auto;
+}
+
+textarea{
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: thin;
+    margin: 10px auto 20px auto;
+}
+
+.btn-primary{
+    background-color: #4aaaa5;
+    color: white;
+    border: none;
+    width: 115px;
+    height: 40px;
+    font-size: 16px;
+}
+
+/**** End input styling *****/
+
+/***** Minicontainer for the portfolio images and banners *****/
+
+.portfoliocontainer{
+    position: relative;
+    margin: 10px 0px 10px 20px!important;
+}
+
+.card {
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.cardTitle {
+    font-weight: bold;
+}
+
+.cardDate {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.cardDescription {
+    font-size: 16px;
+}
+
+.cardLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolioimagelink{
+    z-index: 100;
+}
+
+.cardbanner{
+    position: absolute;
+    bottom: 10px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    margin-left: -20px;
+    width: 100%;
+    text-decoration-line: none;
+
+    /* IE, Opera, Mozilla supports */
+    text-decoration: none;
+    z-index: 200;
+}
+
+.ghabs {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2000;
+}
+
+.card a:hover {
+    color: white!important;
+    text-decoration-line: none!important;
+    /* IE, Opera, Mozilla supports */
+    text-decoration: none!important;
+}
+
+.devIcons{
+    margin-top: 10px;
+}
+
+.newDevicon{
+    height: auto;
+    width: 18px;
+    padding-bottom: 5px;
+}
+
+/*****  End Portfolio styling *****/
+
+.ghRepo {
+    background-color: red;
+    text-align: center;
+}
+
+.ghImg {
+    width: 20px;
+    height: 20px;
+}
+
+.devIcons{
+    margin-top: 10px;
+}
+
+#aboutMe {
+    margin-top: 20px;
+}
+
+#aboutDescription {
+    margin-top: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+li, p {
+    line-height: 1.5;
+}
+
+.rafWrapper {
+    display: inline-block;
+}
+
+.rafImgContainer {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.rafImg {
+ width: 100%;
+ height: auto;
+}
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0px;
+    z-index: 9999;
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 28px;
+    margin: 0px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+    margin-left: -20px;
+  }
+
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  
+  @-moz-keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  
+  .github {
+    background: purple;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .email {
+    background: red;
+    color: white;
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 660px) {
+    .icon-bar { display: none; } 
+  }
+
+  
